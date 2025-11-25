@@ -21,7 +21,6 @@ from langchain.tools import tool
 #this is for env file
 load_dotenv() 
 
-# ---------------------------- LOGGING ADDED ----------------------------
 import os
 from datetime import datetime
 
@@ -35,7 +34,6 @@ def write_log(text: str):
         f.write(text + "\n")
 
 write_log("===== LANGGRAPH SESSION STARTED =====")
-# ----------------------------------------------------------------------
 
 
 #open ai init
