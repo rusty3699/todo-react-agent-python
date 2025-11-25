@@ -22,14 +22,17 @@
 
 
 ## Output
-Added
-![alt text](screenshots/added.png)
 
-Removed 
-![alt text](screenshots/removed.png)
+### Screenshots
 
-List all
-![alt text](screenshots/list.png)
+#### Added
+![Added item screenshot](screenshots/added.png)
 
-- I have ignored from gitignore logs/ for you to check. 
+#### Removed
+![Removed item screenshot](screenshots/removed.png)
+
+#### List all
+![List all screenshot](screenshots/list.png)
+
+- I have ignored from gitignore logs/ for you to check.
 
