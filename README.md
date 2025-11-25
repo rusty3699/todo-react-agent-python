@@ -37,5 +37,4 @@ or ```python todo-react-lang.py```
 #### List all
 ![List all screenshot](screenshots/list.png)
 
-- I have ignored from gitignore logs/ for you to check.
 
