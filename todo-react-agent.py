@@ -1,4 +1,4 @@
-"""Anish Tipnis - A Short Demo of a TODO List using ReAct Prompt.
+"""Anish Tipnis - A Short Demo of a TODO List using ReAct Prompt CLI.
 LLM used here is GPT-4.1-Mini from OpenAI as a brain.
 
 So bascially, you can prompt the agent to add, remove, and list items.
@@ -6,6 +6,7 @@ you can run multiple commands in a single prompt too.
 
 I have not added any json/db support, so the to-do list is in-memory onlyy.
 I have nto added any UI to this, I can add up flask if needed.
+Cuurrently i havent added any nested tasks. 
 
 Links ref - https://react-lm.github.io/, https://arxiv.org/abs/2210.03629
 """
@@ -185,8 +186,11 @@ def run_agent(user_input: str, max_steps: int = 6) -> str:
         parsed = parse_react_output(model_output)
 
         # --- Optional short terminal print ---
-        if parsed["action"]:
-            print(f"[step {step+1}] → {parsed['action']}({parsed['action_input']})")
+        if parsed["action"] == "list_items":
+            print(f"[step {step+1}] - list_items()")
+        else:
+            print(f"[step {step+1}] - {parsed['action']}({parsed['action_input']})")
+
 
         # Final Answer?
         if parsed["final_answer"]:
@@ -208,7 +212,7 @@ if __name__ == "__main__":
     write_log("===== SESSION STARTED =====")
 
     while True:
-        user = input("\nEnter your request (or 'quit'): ")
+        user = input("\nEnter your request(add,remove,list) (or 'quit'): ")
         if user.lower() == "quit":
             break
 
