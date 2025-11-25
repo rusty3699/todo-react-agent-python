@@ -21,3 +21,15 @@
 - "What items are on my todo list?"
 
 
+## Output
+Added
+![alt text](screenshots/added.png)
+
+Removed 
+![alt text](screenshots/removed.png)
+
+List all
+![alt text](screenshots/list.png)
+
+- I have ignored from gitignore logs/ for you to check. 
+
