@@ -9,6 +9,7 @@
 
 ## Setup
 - create a .env file with a key
+- pip install -r requirements.txt
 
 ## Usage
 
