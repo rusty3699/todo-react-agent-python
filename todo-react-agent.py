@@ -185,19 +185,19 @@ def run_agent(user_input: str, max_steps: int = 6) -> str:
 
         parsed = parse_react_output(model_output)
 
-        # --- Optional short terminal print ---
+        #added to remove None prints
         if parsed["action"] == "list_items":
             print(f"[step {step+1}] - list_items()")
         else:
             print(f"[step {step+1}] - {parsed['action']}({parsed['action_input']})")
 
 
-        # Final Answer?
+        #finall answerr
         if parsed["final_answer"]:
             write_log(f"\nFINAL ANSWER:\n{parsed['final_answer']}")
             return parsed["final_answer"]
 
-        # Execute tool
+        #execute
         observation = run_action(parsed["action"], parsed["action_input"])
         write_log(f"\nOBSERVATION:\n{observation}")
 
