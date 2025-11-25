@@ -14,6 +14,8 @@
 ## Usage
 
 ```python todo-react-agent.py```
+or ```python todo-react-lang.py```
+
 
 ## Example Commands to try
 - "Buy a rubiks cube and add it to my todo list"
