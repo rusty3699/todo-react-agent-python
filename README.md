@@ -13,7 +13,6 @@
 ## Usage
 
 ```bash python todo-react-agent.py
-```
 
 ## Example Commands to try
 - "Buy a rubiks cube and add it to my todo list"
