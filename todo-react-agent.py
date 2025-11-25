@@ -5,7 +5,7 @@ So bascially, you can prompt the agent to add, remove, and list items.
 you can run multiple commands in a single prompt too. 
 
 I have not added any json/db support, so the to-do list is in-memory onlyy.
-I have nto added any UI to this, I can add up flask if needed.
+I have not added any UI to this, I can add up flask if needed.
 Cuurrently i havent added any nested tasks. 
 
 Links ref - https://react-lm.github.io/, https://arxiv.org/abs/2210.03629
